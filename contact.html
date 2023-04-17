@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pompeo</title>
+
+    <!-- icon -->
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.min.css">
+
+    <!-- bt icon -->
+    <link rel="stylesheet" href="bootstrap-icons-1.10.3/bootstrap.svg">
+
+    <!-- bt css -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+    <!-- bt js -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="pompeo.css">
+
+    <!-- scss -->
+    <link rel="stylesheet" href="pompeo.scss">
+
+    <!-- tail wind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.tailwindcss.com/tailwind/2.0.0/tailwind.min.css">
+
+     <!-- aos css  -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+     <!-- aos js -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+     <style>
+        *
+        {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+
+        @media only screen and (max-width:768px)
+        {
+            .mainbox
+            {
+                display:block;
+                margin:0px;
+              
+            }
+
+            .fontbox
+            {
+                width:100%;
+                margin:0;
+            }
+
+            .img1
+            {
+                width:100%;
+                margin:0;
+            }
+
+            .potteryimg1
+            {
+                height:70%;
+                width:100%;
+              
+            }
+
+            .pp , .up , .um 
+            {
+              text-align: center;
+              font-size: 30px;
+              padding:20px;
+            }
+
+            .shopbtn
+            {
+              margin-left:138px;
+            }
+
+            .categories
+            {
+              margin-top:400px;
+            }
+
+            .porcelian
+            {
+              font-size: 33px;
+            }
+
+            .vmp
+            {
+              display: block;
+            }
+
+            .div1, .div2, .div3
+            {
+              width:100%;
+              padding:15px;
+            }
+
+            .gold, .orange
+            {
+              display: block  ;
+            }
+
+            .goldpot, .orangepot, .goldpottext, .orangepottext
+            {
+              width:100%;
+              margin:30px;
+              padding:0px;
+              text-align: center;
+            }
+
+            .collections
+            {
+              display:block;
+            }
+
+            .decor, .mint, .set
+            {
+              width:100%;
+              padding:0px;
+              margin:0px;
+              margin-top:30px;
+            }
+
+            .pc
+            {
+              text-align:center;
+              font-size:25px;
+            }
+
+            .collections2
+            {
+              display:block ;
+            }
+
+            .orangeceramic, .dark , .square
+            {
+              width:100%;
+              margin:0px;
+              padding:0px;
+              margin-top:30px;
+            }
+
+            .pompeopottery
+            {
+              width:100%;
+              padding:0px;
+            }
+
+            .ppt
+            {
+              left:0;
+            }
+
+            .rtsp
+            {
+              left:0;
+            }
+
+            .extra
+            {
+              top:250px;
+              left:0;
+            }
+
+            .buttonnew
+            {
+              left:0;
+              top:390px;
+              width:40%;
+            }
+
+            .pompeofoot
+            {
+              margin-left:100px;
+            }
+            .ppt
+            {
+                text-align: start;
+            }
+
+            .contactpompeo
+            {
+              display: block;
+            }
+
+            .email, .find , .call
+            {
+              width:100%;
+              margin:30px;
+              margin-left:0px;
+            }
+
+            .footer
+            {
+             
+              margin-top:100px;
+            }
+
+            .about
+            {
+              width:100%;
+            }
+
+            .ab
+            {
+              left:10px;
+            }
+
+            .abl
+            {
+              left:10px;
+            }
+
+            .ppimgbox
+            {
+              display:block;
+              overflow: hidden;
+            }
+
+            .vase
+            {
+              width:100%;
+            }
+
+            .pc
+            {
+              width:100%;
+              font-size: 20px;
+            }
+
+            .pc2
+            {
+              width:100%;
+              font-size: 20px;
+              padding-left: 0px;
+              margin:0;
+              padding:0;
+            }
+
+            .flex1, .flex2, .flex3, .flex4, .flex5, .flex6, .flex7
+            {
+              display:block;
+            }
+
+            .blueplate, .whitepot, .winepot
+            {
+              width:100%;
+            }
+
+            .pbt, .pbt2
+            {
+              text-align:center;
+            }
+
+            .addressbox
+            {
+                display:block;
+                margin-top:0;   
+            }
+
+            .blank, .phonenumber, .location, .emailaddress
+            {
+                width:100%;
+            }
+
+            .addressbox
+            {
+              display:block;
+            }
+
+            .blank, .phonenumber, .location, .emailaddress 
+            {
+              width:100%;
+            }
+
+            .formbox
+            {
+              margin-top:300px;
+              width:100%;
+            }
+
+            .formtextbox
+            {
+              display:block;
+            }
+
+            .imgtea
+            {
+              width:100%;  
+              border:1px solid black;
+            }
+
+            .formtext
+            {
+              width:100%;
+            }
+
+            .formcss
+            {
+              margin:0;
+              padding:0;
+            }
+
+            .footer{
+              margin-top:400px;
+            }
+
+            .btn
+            {
+              margin-left:0;
+              padding:0;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    
+    <script>
+        AOS.init({duration:1200});
+      </script>
+
+
+</script>
+<div id="preloader"></div>
+
+     <!-- header -->
+
+     <nav class="navbar">
+      <div class="navbar-container container">
+          <input type="checkbox" name="" id="">
+          <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+          </div>
+          <ul class="menu-items">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <h1 class="logo">POMPEO</h1>
+      </div>
+  </nav>
+
+
+
+<!-- content -->
+
+<div class="about" data-aos="fade-up">
+    <img src="/work/pompeo/contactimg.jpg" class="shopimg">
+    <h3 class="ab" data-aos="zoom-in">Contact us</h3>
+    <h4 class="abl" data-aos="zoom-in">The attractions of ceramics lie partly in its contradictions. It is both difficult and<br>easy, with an element beyond our control. It is both extremely fragile and<br>durable. Like 'Sumi' ink painting, it does not lend itself to erasures and<br>indecision.</h4>
+  </div>
+
+
+<!-- contact us -->
+
+<div class="contactusbox">
+    <h3 class="cs" data-aos="fade-down">CONTACT US</h3>
+    <h3 class="cs2" data-aos="fade-down">Let's Get in Touch</h3>
+
+
+    <div class="addressbox">
+        <div class="blank"></div>
+        <div class="phonenumber">
+            <h4 class="ph1" data-aos="fade-down">PHONE</h4>
+            <h4 class="ph1" data-aos="fade-down">+91 98767898</h4>
+        </div>
+
+        <div class="location">
+            <h4 class="ph1" data-aos="fade-down">LOCATION</h4>
+            <h4 class="ph1" data-aos="fade-down">223, fifth ave , NYC</h4>
+        </div>
+
+        <div class="emailaddress">
+            <h4 class="ph1" data-aos="fade-down">EMAIL</h4>
+            <h4 class="ph1" data-aos="fade-down">POMPEO@POT.COM</h4>
+        </div>
+        <div class="blank"></div>
+    </div>
+
+    <div class="formbox">
+        <div class="formimg1">
+            <img src="/work/pompeo/cupt2.webp" class="fi1" data-aos="zoom-in">
+        </div>
+
+        <div class="formtextbox">
+            <div class="imgtea">
+                <img src="/work/pompeo/formimg.jpeg" class="formcss" data-aos="zoom-in">
+            </div>
+
+            <div class="formtext">
+                <h3 class="drop" data-aos="zoom-in">Drop Us a Line</h3>
+                <form>
+
+                    <label for="name" class="entern" data-aos="zoom-in">NAME:</label>
+                    <input type="text" placeholder="ENTER YOUR NAME" class="entern2" data-aos="zoom-in"> <br>
+
+                    <label for="email" class="enterne" data-aos="zoom-in">EMAIL:</label>
+                    <input type="email" placeholder="ENTER YOUR EMAIL" class="entern2" data-aos="zoom-in"><br>
+
+                   <label for="phone" class="enternp" data-aos="zoom-in">PHONE:</label>
+                   <input type="email" placeholder="ENTER YOUR NUM." class="entern2" data-aos="zoom-in"><br>
+
+                   <input type="submit" placeholder="SUBMIT" class="btn" data-aos="zoom-in">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- footer -->
+
+<div class="footer" data-aos="fade-up">
+  <div class="pompeofoot">
+    <h3 class="pft" data-aos="fade-down">POMPEO</h3>
+  </div>
+
+  <div class="expeo">
+    <h5 class="expeot" data-aos="fade-down">I have always striven to fix beauty in wood, stone,glass or pottery, that has been my creed.</h5>   
+  </div>
+
+  <div class="contactpompeo">
+     <div class="email">
+      <i class="fa-regular fa-envelope enve" data-aos="fade-down"></i>
+      <h3 class="et" data-aos="fade-down">EMAIL</h3>
+      <h3 class="etn">pompeo@gmail.com</h3>
+     </div>
+
+
+     <div class="find">
+      <i class="fa-solid fa-location-dot fl" data-aos="fade-down"></i>
+      <h3 class="findt" data-aos="fade-down">FIND</h3>
+      <h3 class="findt2" data-aos="fade-down">Central park, Manhattan ,New York,1101</h3>
+     </div>
+
+
+     <div class="call">
+      <i class="fa-solid fa-phone enve" data-aos="fade-down"></i>
+      <h3 class="et" data-aos="fade-down">PHONE</h3>
+      <h3 class="etn" >+123 4567 890</h3>
+     </div>
+  </div>
+</div>
+
+
+<!-- pre loader -->
+<script>
+    var loader=document.getElementById("preloader");
+
+    window.addEventListener("load" , function () {loader.style.display="none" ;})
+  </script>
+</body>
+</html>
